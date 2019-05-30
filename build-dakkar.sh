@@ -45,7 +45,7 @@ ROM types:
   pixel90
   crdroid
   mokee
-  aicp
+  aosip
   aokp
   aex
   slim
@@ -163,11 +163,11 @@ function get_rom_type() {
                 treble_generate="mokee"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
-            aicp)
+            aosip)
                 mainrepo="https://github.com/DerpFest-OP5T/platform_manifest.git"
                 mainbranch="pie"
                 localManifestBranch="android-9.0"
-                treble_generate="aicp"
+                treble_generate="aosip"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
             aokp)

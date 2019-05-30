@@ -42,7 +42,7 @@ elif [ "$rom" == "lineage16" ];then
 	repo init -u https://github.com/LineageOS/android.git -b lineage-16.0
 elif [ "$rom" == "rr" ];then
 	repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b pie
-elif [ "$rom" == "rr" ];then
+elif [ "$rom" == "pearl" ];then
 	repo init -u https://github.com/PearlOS/platform_manifest.git -b pie
 fi
 

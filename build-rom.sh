@@ -6,7 +6,7 @@ mkdir -p release/$rom_fp/
 set -e
 
 if [ "$#" -le 1 ];then
-	echo "Usage: $0 <android-8.1> <carbon|lineage|rr> '# of jobs'"
+	echo "Usage: $0 <android-8.1> <carbon|lineage|rr|pearl> '# of jobs'"
 	exit 0
 fi
 localManifestBranch=$1
@@ -42,6 +42,8 @@ elif [ "$rom" == "lineage16" ];then
 	repo init -u https://github.com/LineageOS/android.git -b lineage-16.0
 elif [ "$rom" == "rr" ];then
 	repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b pie
+elif [ "$rom" == "rr" ];then
+	repo init -u https://github.com/PearlOS/platform_manifest.git -b pie
 fi
 
 if [ -d .repo/local_manifests ] ;then
